@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+  
+  <meta charset="UTF-8">
+  <title>OnLine RPS Game</title>
+  
+    <!-- CSS and Bootstrap plus JS for Bootstrap -->
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./assets/css/style.css" media="screen">
+  <!-- Firebase Reference -->
+  <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyDO_RdEKlDAEavQnLXHT43B5o5Cpq0xXIU",
+        authDomain: "rpsbattle-d15ef.firebaseapp.com",
+        databaseURL: "https://rpsbattle-d15ef.firebaseio.com",
+        projectId: "rpsbattle-d15ef",
+        storageBucket: "",
+        messagingSenderId: "875943112017"
+    };
+    firebase.initializeApp(config);
+  </script>
+  
+
+  
+</head>
+
+<body>
+  
+    <div class="container flex">
+        <div class="row col-sm-12 description">Online Rock, Paper, Scissors</div>
+
+        <div class="row col-sm-12" id="username">
+            <form id="name-form">
+                    <input type="text" id="player-name" placeholder="Enter Player Name">
+                    <input id="add-name" type="submit" value="Start">
+            </form>
+        </div>
+        <div class="row col-sm-12" id="messages"></div>
+        <div class="row">
+                <div id="1" class="col-sm-3 status flex">
+                    <div id="playerDisplay-1"></div>
+                    <div id="playerAction-1"></div>
+                    <div id="playerScore-1"></div>
+                </div>
+                <div class="col-sm-6 status" style="border-left:0;border-right:0;">
+                        <div id="playStatus"></div>
+                </div>
+                <div id="2" class="col-sm-3 status flex">
+                    <div id="playerDisplay-2"></div>
+                    <div id="playerAction-2"></div>
+                    <div id="playerScore-2"></div>
+                </div>
+        </div>
+        <br>
+        <div class="row">
+        <div class="col-sm-8 chat">
+        <div class="chatwin">
+            <p id="chat-messages"></p>
+        </div>
+        <form id="chat-form">
+                <input type="text" id="chat-msg" style="width:406px;" placeholder="Enter Chat Message">
+                <input id="add-msg" type="submit" value="Send">
+        </form>
+        </div>
+        </div>
+    </div>
+
+<!-- JavaScript -->
+<script type="text/javascript" src="./assets/javascript/gameLogic.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+body {
+    background-color: rgb(164, 213, 221);
+}
+P{
+    margin-bottom:0;
+}
+.container
+{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+div {
+    display:flex;
+    justify-content: center;
+}
+.description {
+    background: rgb(140, 179, 211);
+    min-height: 40px;
+    padding: 10px;
+    font-size:24px;
+    font-family:calibri;
+}
+.row {
+margin-right:0px;
+margin-left:0px;
+}
+.status {
+min-height: 266px;
+padding:10px;
+border-width: 2px;
+border-color:blue;
+border: solid;
+display:flex;
+flex-direction: column;
+justify-content: start; 
+align-items:center;
+}
+
+
+
+#playStatus,
+#playerAction-2,
+#playerAction-1 {
+display:flex;
+flex-direction: column;
+min-height:160px;
+
+}
+.action-btn {
+margin:10px;
+max-width: 100px;
+border: none;
+background:none;
+justify-content: end; 
+font-weight:bold;
+}
+#chat-msg,
+#player-name{
+    background-color: rgb(204, 233, 238); 
+}
+input{
+    background: rgb(140, 179, 211);
+}
+
+#name-form {
+    padding:10px;
+}
+.name {
+    font-weight: bolder;
+}
+.pick {
+font-size:30px;
+font-weight:bolder;
+}
+.winner {
+font-size:30px;
+font-weight:bolder;
+justify-content: center;
+display:flex;
+flex-direction: column;
+}
+.chat {
+    min-height: 200px;
+    padding:10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: start; 
+    align-items:center;
+}
+.chatwin {
+    min-width: 100%;
+    border-width: 1px;
+    border-color:blue;
+    border: solid;
+    display:flex;
+    background-color: whitesmoke;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items:left;
+    width: 300px;
+    height: 200px;
+    overflow: auto;
+    background-color: rgb(204, 233, 238); 
+    margin-bottom:5px;
+}
+#messages{
+    font-weight: bold;
+}
