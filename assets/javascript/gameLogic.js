@@ -148,11 +148,11 @@ function game() {
     $("#messages").empty();
     $("#chat-messages").empty();
     // reset win/loss to 0 when someone leaves  but a flag to stop it on first connect
-    if (playNum !== 0) {
-      database.ref("/player/" + playNum + "/wins").set(0);
-      database.ref("/player/" + playNum + "/losses").set(0);
-      $("#playerScore-" + playNum).html(`<div><p>Wins: 0 Losses: 0 </p></div>`);
-    };
+    // if (playNum !== 0) {
+    //   database.ref("/player/" + playNum + "/wins").set(0);
+    //   database.ref("/player/" + playNum + "/losses").set(0);
+    //   $("#playerScore-" + playNum).html(`<div><p>Wins: 0 Losses: 0 </p></div>`);
+    // };
 
   }
  
